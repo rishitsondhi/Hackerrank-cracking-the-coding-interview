@@ -1,0 +1,33 @@
+#include<stdio.h>
+//#include<conio.h>
+#include<math.h>
+int main ()
+{
+	unsigned long long int num,i,a,j;
+	unsigned long long int number;
+//	printf ("enter the number");
+	scanf ("%ulld",&number);
+	for (j=0;j<number;j++)
+	{
+//	printf ("enter the value");
+	scanf ("%ulld",&num);
+    if (num==1)
+	{
+		printf ("Not prime\n");
+		continue;
+	}
+	a=0;
+	for (i=2;i<num;i++)
+	{
+		if (num%i==0)
+		a=1;
+		
+	}
+	if (a==1)
+	printf ("Not prime\n");
+	else
+	printf ("Prime\n");
+	}
+	return 0;
+	
+}
