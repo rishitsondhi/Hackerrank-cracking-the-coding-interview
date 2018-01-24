@@ -1,0 +1,30 @@
+#include<stdio.h>
+//#include<conio.h>
+int main ()
+{
+	int i,j,k,l,arr[2000],n,t,money,flavours;
+//	printf ("enter the number of loops");
+	scanf ("%d",&n);
+	for (i=0;i<n;i++)
+	{
+//		printf ("enter the amount");
+		scanf ("%d",&money);
+//		printf ("enter the number of flavours");
+		scanf ("%d",&flavours);
+//		printf ("enter the flavours");
+		for (l=1;l<=flavours;l++)
+		{
+			scanf ("%d",&arr[l]);
+		}
+		for (j=1;j<=flavours;j++)
+		{
+			for (k=j+1;k<=flavours;k++)
+			{
+				if (arr[j]+arr[k]==money)
+				{
+					printf ("%d %d\n",j,k);
+				}
+			}
+		}
+	}
+}
