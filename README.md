@@ -1,3 +1,3 @@
 # Hackerrank-cracking-the-coding-interview
-Cracking the Coding Interview
+Will Help in Cracking the Coding Interview in Hackerrank.
 <p>The following solutions are in c-Language.</p>
